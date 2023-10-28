@@ -9,6 +9,10 @@ class Monster implements SimpleFighter {
   get lifePoints(): number {
     return this._lifePoints;
   }
+  
+  set lifePoints(lifePoints: number) {
+    this._lifePoints = lifePoints;
+  }
 
   get strength(): number {
     return this._strength;
