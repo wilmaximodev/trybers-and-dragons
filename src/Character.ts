@@ -36,6 +36,12 @@ class Character implements Fighter {
     if (this._lifePoints <= 0) {
       this._lifePoints = -1;
     }
+    console.log(
+      'damage received:',
+      attackPoints,
+      'life points:',
+      this._lifePoints,
+    );
     return this._lifePoints;
   }
 
@@ -52,11 +58,12 @@ class Character implements Fighter {
     this._dexterity += getRandomInt(1, 10);
     this._defense += getRandomInt(1, 10);
     this._energy.amount = 10;
+    console.log('LEVEL UP, LIFE:', this._lifePoints);
   }
 
   special(enemy: Fighter): void {
     enemy.receiveDamage(this._strength * 3);
-    console.log('CRITICAL HIT RECEIVED!');
+    console.log(`${this._name} USED SPECIAL ATTACK!`);
   }
 
   get name(): string { 

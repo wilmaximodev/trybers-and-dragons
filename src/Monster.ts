@@ -21,11 +21,18 @@ class Monster implements SimpleFighter {
     } else {
       this._lifePoints = -1;
     }
+    console.log(
+      'damage received:',
+      attackPoints,
+      'life points:',
+      this._lifePoints,
+    );
     return this._lifePoints;
   }
 
   attack(enemy: SimpleFighter): void {
     enemy.receiveDamage(this._strength);
+    console.log('MONSTER ATTACK!');
   }
 }
 

@@ -13,7 +13,9 @@ class PVP extends Battle {
   fight() {
     while (this.verifyLifePoints()) {
       this._playerOne.attack(this._playerTwo);
+      console.log(this._playerTwo.lifePoints);
       this._playerTwo.attack(this._playerOne);
+      console.log(this._playerOne.lifePoints);
     }
     return super.fight();
   }

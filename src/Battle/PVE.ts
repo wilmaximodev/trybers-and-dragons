@@ -17,7 +17,9 @@ class PVE extends Battle {
   fight() {
     while (this.verifyLifePoints()) {
       this._character.attack(this._monsters[0]);
+      console.log(this._monsters[0].lifePoints);
       this._monsters[0].attack(this._character);
+      console.log(this._character.lifePoints);
     }
     return super.fight();
   }
