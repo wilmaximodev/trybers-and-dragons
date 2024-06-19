@@ -1,4 +1,4 @@
-# Trybers and Dragons 🐉
+hi# Trybers and Dragons 🐉
 
 ## 📄 Sobre:
 
@@ -82,6 +82,3 @@ Uma vez na raiz do projeto, execute o comando abaixo para instalar as dependênc
 * POO (Programação Orientada a Objeto)
 * SOLID
 </br>
-
-## 📝 Desenvolvido por:
-* [João Emanuel Soares Pacheco](https://github.com/joaoespacheco)
